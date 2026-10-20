@@ -25,7 +25,12 @@
   "buffer_font_weight": 400,
   "buffer_font_features": { "calt": false },
   "ui_font_size": 15,
-  "indent_guides": { "enabled": true, "coloring": "indent_aware" },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+    "line_width": 1,
+    "active_line_width": 3,
+  },
   "cli_default_open_behavior": "existing_window",
   "format_on_save": "off",
   "file_scan_exclusions": ["**/.git", "**/.DS_Store", "**/.terraform", "**/.terragrunt-cache", "**/node_modules", "**/charts/*.tgz"],
@@ -131,6 +136,7 @@
     "breadcrumbs": false,
     "quick_actions": false
   },
+  "sticky_scroll": { "enabled": true },
   "base_keymap": "VSCode",
   "icon_theme": {
     "mode": "light",
@@ -150,6 +156,8 @@
 
       "panel.background": "#181825",
       "editor.background": "#1e1e2e",
+      "editor.active_line_number": "#f9e2af",
+      "editor.line_number": "#6c7086",
       "element.background": "#313244",
       "border": "#585b70",
       "border.variant": "#45475a",
@@ -179,5 +187,8 @@
       "formatter": { "external": { "command": "shfmt", "arguments": ["-i", "2", "-ci"] } }
     },
   },
+  "current_line_highlight": "all",
+  "cursor_shape": "bar",
+  "cursor_blink": false,
 
 }
